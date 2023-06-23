@@ -1,3 +1,4 @@
+for..of loop
 var arr=[1,2,3,4,5,"tony",4.5,3/4]
 
 for(var ele of arr)
@@ -9,3 +10,15 @@ for(var ele of arr1)
 s+=ele
 
 console.log(s)
+
+ans::
+1)
+3
+4
+5
+6
+7
+tony2
+6.5
+2.75
+ 2)-->15
