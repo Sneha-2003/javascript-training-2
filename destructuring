@@ -1,1 +1,41 @@
+var {age,firstname:name,height=10}={firstname:"Sneha",age:30}
+console.log(name,age,height,name)
 
+for let
+let [,,,a,b]=[1,2,3,4,5]
+console.log(a)
+console.log(b)
+console.log()
+
+(If _ is used in console throws error because it assume as redeclaring)
+
+ans::
+4
+5
+
+-------------------
+object spreader
+
+1) var {age,...rest}={firstname:"Sneha",age:30,add:"cbe"}
+console.log(age,rest)
+
+30 { firstname: 'Sneha', add: 'cbe' }
+
+
+
+
+2) var a1={firstname:"Sneha",age:30,add:"cbe"}
+var a2={finame:"Sneha",ag:30,ad:"cbe"}
+var res={...a1,...a2}
+console.log(res)
+-----------
+
+ans::
+{
+  firstname: 'Sneha',
+  age: 30,
+  add: 'cbe',
+  finame: 'Sneha',
+  ag: 30,
+  ad: 'cbe'
+}
