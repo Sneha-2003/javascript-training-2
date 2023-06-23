@@ -30,10 +30,59 @@ Array:
 3)unshift-->add at first position
 4)shift--->delete at first position
 
+note:
+if we need to delete a particular element in an array 
+we can also use splice() operator too 
+eg:
+arr=[1,2,3,4]
+//to delete 3 in array
+arr.splice(2,1)
+console.log(arr)
+
+ans::
+[ 1, 2, 4 ]
+
+var arr=[1,2,3]
+console.log(arr)
+console.log(arr[0])
+
+arr.push(4)
+console.log(arr)
+arr.pop()
+console.log(arr)
+arr.unshift(45,67)
+console.log(arr)
+arr.shift()
+console.log(arr)
+
+ans::
+[ 1, 2, 3 ]
+1
+[ 1, 2, 3, 4 ]
+[ 1, 2, 3 ]
+[ 45, 67, 1, 2, 3 ]
+[ 67, 1, 2, 3 ]
+
 ----------------------------------------
-splice (start index,count to be deleted)
+splice ( index to be started,count to be deleted from that index )
 
+var arr=[1,2,3,4,5,6,7,34,345,78,9]
+console.log(arr)
 
+ans::
+[
+  1, 2,  3,   4,  5,
+  6, 7, 34, 345, 78,
+  9
+]
 
+arr.splice(2,4)
+console.log(arr)
+
+ans::
+[
+    1,  2, 7, 34,
+  345, 78, 9
+]
 ----------------------------------------
 
