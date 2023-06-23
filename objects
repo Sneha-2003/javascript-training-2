@@ -57,7 +57,10 @@ ans::[ 'fn', 'ln', 'marks', 'age', 'salary' ]
 -----------------------------------
 
 map-->(return keyword must)
+/*
+map create a array with same type we is not manadatory to declare a array at the beginning
 
+*/
 eg:
 const arr=[1,2,3,4,5]
 
@@ -73,7 +76,7 @@ ans::
 forEach loop
 eg:
 const arr=[2,3,4,5]
- const res=[]---> we have to declar a variable
+ const res=[]---> we have to declare a array variable it is mandatory
 arr.forEach((i)=>{
     res.push(i*2 +1)// i*2
 })
