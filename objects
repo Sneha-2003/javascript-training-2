@@ -1,1 +1,39 @@
+var obj={fn:"Sneha"}
 
+obj.age=20;
+obj["salary"]=400;
+
+console.log(obj)
+
+for(var key in obj)
+console.log(key+" : "+obj[key])
+
+Ans::
+  { fn: 'Sneha', age: 20, salary: 400 }
+  
+fn : Sneha
+age : 20
+salary : 400
+
+2nd eg:
+var person={fn:"Tony",ln:"Stark",
+    marks:{math:80,sci:45}
+}
+
+person.age=20;
+person["salary"]=400;
+
+console.log(person)
+
+console.log(`${person.fn} ${person.ln}'s maths mark is ${person.marks.math} `)
+
+ans::
+ {
+  fn: 'Tony',
+  ln: 'Stark',
+  marks: { math: 80, sci: 45 },
+  age: 20,
+  salary: 400
+}
+
+Tony Stark's maths mark is 80 
