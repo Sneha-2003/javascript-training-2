@@ -25,8 +25,14 @@ person["salary"]=400;
 
 console.log(person)
 var sub="maths"
-console.log(`${person.fn} ${person.ln}'s ${sub} mark is ${person.marks[sub]} `)
-
+console.log(`${person.fn} ${person.ln}'s ${sub} mark
+is ${person.marks[sub]} `)
+ 
+note:
+**in square brackets we can't directly use the keyword
+** we have to place the variable name in the square brackets
+   which is already declared (dynamic values) (or)
+ place the keyword within the single or double quotes
 ans::
  {
   fn: 'Tony',
