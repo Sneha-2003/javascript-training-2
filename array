@@ -1,0 +1,11 @@
+var arr=[1,2,3,4,5,"tony",4.5,3/4]
+
+for(var ele of arr)
+console.log(ele+2)
+
+var arr1=[1,2,3,4,5]
+ var s=0
+for(var ele of arr1)
+s+=ele
+
+console.log(s)
