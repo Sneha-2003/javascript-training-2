@@ -22,3 +22,18 @@ tony2
 6.5
 2.75
  2)-->15
+
+
+Array:
+1)push()-->insert element at last
+2)pop() -->delete element at last
+3)unshift-->add at first position
+4)shift--->delete at first position
+
+----------------------------------------
+splice (start index,count to be deleted)
+
+
+
+----------------------------------------
+
