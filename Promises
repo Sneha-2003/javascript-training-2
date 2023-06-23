@@ -1,1 +1,76 @@
+const myPromise = new Promise((resolve,reject) 
 
+
+const myPromise =new Promise((resolve,reject)=>{
+    setTimeout(()=>
+   { resolve("Success..")},200);
+});
+
+console.log("Start")
+
+myPromise.then((result)=>{
+    console.log(result)
+}).catch((result)=>
+{
+    console.log(result)
+})
+
+console.log("END...")
+
+ans::
+Start
+END...
+Success..
+
+-----------------------------------
+const myPromise =new Promise((resolve,reject)=>{
+   ran=Math.random()
+   console.log(ran)
+   if(ran<=0.5)
+   {
+   setTimeout(()=>
+   { resolve("Success..")},2000);
+   }
+   else
+   {
+       setTimeout(()=>
+   { reject("Failure..")},200);
+   }
+});
+
+console.log("Start")
+
+myPromise.then((result)=>{
+    console.log(result)
+}).catch((result)=>
+{
+    console.log(result)
+})
+
+console.log("END...")
+
+ans::
+1)   0.562089491468833
+Start
+END...
+Failure..
+
+2)
+0.20058946083128126
+Start
+END...
+Success..
+
+
+-----------------------------------------
+
+const apiRes=fetch('https://jsonplaceholder.typicode.com/todos/1')
+     apiRes .then((response) => 
+     {
+      return response.json()
+     }).then((json) => {
+          console.log(json)
+          
+      }).catch((err)=>{
+          console.log("Error... "+err)
+      })
